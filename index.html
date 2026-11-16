@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gnomad · Support</title>
+<meta name="description" content="Gnomad: a garden gnome runs away to see the world. 24 hand-made levels across Lisbon, Paris, New York, Kyoto and Rio. Help and contact.">
+<link rel="icon" href="icon-256.png">
+<style>
+  :root { --ink: #43263F; --cream: #FFF9EE; --gold: #F2B45A; --red: #C42A33; --sky1: #F7C98B; --sky2: #E9A6A0; --soft: #7A5F78; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--ink); background: var(--cream); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  header { background: linear-gradient(180deg, #8FA7D8 0%, var(--sky2) 55%, var(--sky1) 100%); padding: 64px 22px 72px; text-align: center; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 46px; background:
+    linear-gradient(var(--cream), var(--cream)) bottom / 100% 14px no-repeat,
+    radial-gradient(circle at 10% 100%, var(--cream) 22px, transparent 23px) 0 100% / 90px 46px repeat-x; }
+  header img { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 14px 36px rgba(67, 38, 63, .28); }
+  h1 { font: 700 46px/1.05 "New York", Georgia, serif; margin: 22px 0 10px; letter-spacing: -.5px; }
+  header p { margin: 0 auto; max-width: 30em; font-size: 19px; }
+  main { max-width: 680px; margin: 0 auto; padding: 36px 22px 64px; }
+  .cities { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 22px 0 0; padding: 0; list-style: none; }
+  .cities li { background: rgba(255, 249, 238, .85); border-radius: 99px; padding: 4px 13px; font-size: 15px; font-weight: 600; }
+  h2 { font: 700 26px/1.2 "New York", Georgia, serif; margin: 40px 0 12px; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 8px 0 0; }
+  .fact { background: #fff; border-radius: 18px; padding: 16px 18px; box-shadow: 0 2px 0 rgba(67, 38, 63, .08); }
+  .fact b { display: block; font-size: 17px; margin-bottom: 2px; }
+  .fact span { color: var(--soft); font-size: 15px; }
+  details { background: #fff; border-radius: 16px; padding: 14px 18px; margin: 10px 0; box-shadow: 0 2px 0 rgba(67, 38, 63, .08); }
+  summary { font-weight: 650; cursor: pointer; }
+  details p { margin: 10px 0 2px; }
+  a { color: var(--red); }
+  .contact { background: var(--ink); color: var(--cream); border-radius: 22px; padding: 22px 24px; margin-top: 36px; }
+  .contact a { color: var(--gold); font-weight: 600; }
+  footer { text-align: center; color: var(--soft); font-size: 14px; padding: 0 22px 44px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon-256.png" alt="Gnomad's icon: a garden gnome with a tall red hat, giving a thumbs up against a sunset">
+  <h1>Gnomad</h1>
+  <p>A garden gnome runs away to see the world. Tap to jump, hold to fly higher, swipe to slide: 24 hand-made levels, each with its own song and its own way to play.</p>
+  <ul class="cities"><li>Lisbon</li><li>Paris</li><li>New York</li><li>Kyoto</li><li>Rio</li></ul>
+</header>
+<main>
+  <div class="facts">
+    <div class="fact"><b>One thumb</b><span>Tap, hold or swipe anywhere on the screen.</span></div>
+    <div class="fact"><b>No ads, ever</b><span>Nothing interrupts a run.</span></div>
+    <div class="fact"><b>First level free</b><span>Gnomad Plus opens the whole trip, once.</span></div>
+  </div>
+
+  <h2>Help</h2>
+  <details><summary>I bought Gnomad Plus on another iPhone</summary>
+    <p>Open <b>Levels</b>, tap any locked level, then tap <b>Restore</b>. Use the same Apple Account you bought it with.</p></details>
+  <details><summary>Where is my progress kept?</summary>
+    <p>On your iPhone. Your best runs, rare stamps and hats stay there between launches. Deleting the app deletes them, and <b>Levels → Reset</b> clears them on purpose.</p></details>
+  <details><summary>A level feels impossible</summary>
+    <p>Every level has been cleared by touch, start to finish. Mailboxes are checkpoints, and you can turn them off in the pause menu once you want the gold postmark. If you're stuck, write to me and say which level and where.</p></details>
+  <details><summary>The music is too loud, or I can't hear it</summary>
+    <p>Each level has its own song. Pause and switch <b>Music</b> off or on. Gnomad plays sound even with the ring switch on silent, so use the volume buttons.</p></details>
+  <details><summary>What does "Anonymous stats" do?</summary>
+    <p>It sends anonymous counts that help me make the levels better, like where runs end. Switch it off in the pause menu at any time. The <a href="privacy.html">privacy policy</a> explains exactly what is sent.</p></details>
+
+  <div class="contact">
+    <b>Something else?</b> Write to me at <a href="mailto:ivoisalinas@gmail.com">ivoisalinas@gmail.com</a>. I read every message.
+  </div>
+</main>
+<footer>Gnomad is made by Ivo Iturrieta · <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
